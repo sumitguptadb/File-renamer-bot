@@ -1,0 +1,78 @@
+{
+    "name": "Renamer Bot 4GB",
+    "description": "Telegram File Renamer Bot 4GB",
+    "logo": "https://vault.pictures/p/946ec8b106114c589589af3ffe206e1e",
+    "keywords": ["Premium Rename Bot", "Renamer Bot 4GB", "Mongo DB"],    
+    "repository": "https://github.com/sumitguptadb/File-renamer-bot",
+    
+    "env": {
+        "API_ID": {
+            "description": "Your APP ID From my.telegram.org ",
+            "value": "",
+            "required": true
+        },
+        
+        "API_HASH": {
+            "description": "Your API Hash From my.telegram.org ",
+            "value": "",
+            "required": true
+        },
+        
+        "BOT_TOKEN": {
+            "description": "Your Bot Token From @BotFather",
+            "value": "",
+            "required": true
+        },
+        
+        "ADMIN": {
+            "description":"Add Your User ID, If Multiple Is Use Space To Split",
+            "value": "",
+            "required": true
+        },
+        
+        "STRING_SESSION": {
+            "description": "Premium 4GB Client Pyrogram v2 String Session, You Can Get It From @StringGenXRobot",
+            "value": "",
+            "required": false
+        },
+        
+        "FORCE_SUB": {
+            "description": "Your Force Subscribe Channel Username Without @",
+            "value": "",
+            "required": false 
+        },
+        
+        "LOG_CHANNEL": {
+            "description":"Bot Logs Channel To Sending User Data & 4GB Premium Client To Use, Id Must Startswith -100",
+            "value": "",
+            "required": true          
+        },
+        
+        "DATABASE_URL": {
+            "description": "Your Mongo DB URL Obtained From mongodb.com",
+            "value": "",
+            "required": true
+        },
+        
+        "DATABASE_NAME":{ 
+            "description":"Your Mongo DB Database Name",
+            "value": "",
+            "required": true
+        },
+        
+        "START_PIC": {
+            "description": "Your Bot Start Command Pic, You Can Get It From @GenTelegraphBot",
+            "value": "https://vault.pictures/p/ea2b6ffce0cb4d238eacbe53a5e13478",
+            "required": false
+        }
+    },
+    
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        },
+        {
+            "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+        }    
+    ]
+}
